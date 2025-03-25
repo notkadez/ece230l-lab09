@@ -1,8 +1,8 @@
 module mux8x4(
-    input [7:0]i1, i2, i3, i4,
+    input [7:0] i1, i2, i3, i4,
     input [1:0] sel,
     input enable,
-    output reg [7:0]Y
+    output reg [7:0] Y
 );
     
     always @ (enable,sel) begin
