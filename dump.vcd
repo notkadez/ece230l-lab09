@@ -1,0 +1,353 @@
+$date
+	Tue Mar 25 14:16:20 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module test $end
+$var wire 8 ! memory [7:0] $end
+$var wire 16 " led [15:0] $end
+$var wire 1 # Q $end
+$var wire 1 $ NotQ $end
+$var reg 1 % D $end
+$var reg 1 & E $end
+$var reg 2 ' addr [1:0] $end
+$var reg 8 ( data [7:0] $end
+$var reg 16 ) sw [15:0] $end
+$scope module uut $end
+$var wire 1 & btnC $end
+$var wire 16 * sw [15:0] $end
+$var wire 16 + led [15:0] $end
+$scope module part1 $end
+$var wire 1 , D $end
+$var wire 1 & E $end
+$var wire 1 - Q $end
+$var wire 1 . NotQ $end
+$var reg 1 . NotQ1 $end
+$var reg 1 - Q1 $end
+$upscope $end
+$scope module part2 $end
+$var wire 2 / addr [1:0] $end
+$var wire 8 0 data [7:0] $end
+$var wire 1 & store $end
+$var wire 4 1 store_out [3:0] $end
+$var wire 8 2 memory [7:0] $end
+$scope module dataDemux $end
+$var wire 1 3 enable $end
+$var wire 8 4 in [7:0] $end
+$var wire 2 5 sel [1:0] $end
+$var reg 8 6 o1 [7:0] $end
+$var reg 8 7 o2 [7:0] $end
+$var reg 8 8 o3 [7:0] $end
+$var reg 8 9 o4 [7:0] $end
+$upscope $end
+$scope module mem1 $end
+$var wire 8 : data [7:0] $end
+$var wire 1 ; store $end
+$var reg 8 < memory [7:0] $end
+$upscope $end
+$scope module mem2 $end
+$var wire 8 = data [7:0] $end
+$var wire 1 > store $end
+$var reg 8 ? memory [7:0] $end
+$upscope $end
+$scope module mem3 $end
+$var wire 8 @ data [7:0] $end
+$var wire 1 A store $end
+$var reg 8 B memory [7:0] $end
+$upscope $end
+$scope module mem4 $end
+$var wire 8 C data [7:0] $end
+$var wire 1 D store $end
+$var reg 8 E memory [7:0] $end
+$upscope $end
+$scope module memMux $end
+$var wire 1 F enable $end
+$var wire 8 G i1 [7:0] $end
+$var wire 8 H i2 [7:0] $end
+$var wire 8 I i3 [7:0] $end
+$var wire 8 J i4 [7:0] $end
+$var wire 2 K sel [1:0] $end
+$var reg 8 L Y [7:0] $end
+$upscope $end
+$scope module storeDemux $end
+$var wire 1 M enable $end
+$var wire 1 & in $end
+$var wire 2 N sel [1:0] $end
+$var reg 1 O o1 $end
+$var reg 1 P o2 $end
+$var reg 1 Q o3 $end
+$var reg 1 R o4 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0R
+0Q
+0P
+0O
+b0 N
+1M
+bx L
+b0 K
+bx J
+bx I
+bx H
+bx G
+1F
+bx E
+0D
+b0 C
+bx B
+0A
+b0 @
+bx ?
+0>
+b0 =
+bx <
+0;
+b0 :
+b0 9
+b0 8
+b0 7
+b0 6
+b0 5
+b0 4
+13
+bx 2
+b0 1
+b0 0
+b0 /
+x.
+x-
+0,
+bxzzzzzzxx +
+b0 *
+b0 )
+b0 (
+b0 '
+0&
+0%
+x$
+x#
+bxzzzzzzxx "
+bx !
+$end
+#1000
+b0 <
+b0 G
+1$
+0#
+1;
+1.
+bxzzzzzz10 "
+bxzzzzzz10 +
+0-
+b1 1
+1O
+1&
+#2000
+0;
+b0 1
+0O
+0&
+#4000
+1,
+b1 )
+b1 *
+1%
+#6000
+0$
+1#
+1;
+0.
+bxzzzzzz01 "
+bxzzzzzz01 +
+1-
+b1 1
+1O
+1&
+#7000
+0;
+b0 1
+0O
+0&
+#9000
+0,
+b0 )
+b0 *
+0%
+#11000
+b11 6
+b11 :
+b11 0
+b11 4
+b1100000000 )
+b1100000000 *
+b11 (
+#12000
+b11 <
+b11 G
+1$
+0#
+1;
+1.
+bxzzzzzz10 "
+bxzzzzzz10 +
+0-
+b1 1
+1O
+1&
+#13000
+0;
+b0 1
+0O
+0&
+#14000
+b1100 7
+b1100 =
+b0 6
+b0 :
+b1100 0
+b1100 4
+b1 /
+b1 5
+b1 K
+b1 N
+b110001000000 )
+b110001000000 *
+b1 '
+b1100 (
+#15000
+b1100 ?
+b1100 H
+1>
+b10 1
+1P
+1&
+#16000
+0>
+b0 1
+0P
+0&
+#17000
+b110000 8
+b110000 @
+b0 7
+b0 =
+b110000 0
+b110000 4
+b10 /
+b10 5
+b10 K
+b10 N
+b11000010000000 )
+b11000010000000 *
+b10 '
+b110000 (
+#18000
+b110000 B
+b110000 I
+1A
+b100 1
+1Q
+1&
+#19000
+0A
+b0 1
+0Q
+0&
+#20000
+b11000000 9
+b11000000 C
+b0 8
+b0 @
+b11000000 0
+b11000000 4
+b11 /
+b11 5
+b11 K
+b11 N
+b1100000011000000 )
+b1100000011000000 *
+b11 '
+b11000000 (
+#21000
+b11000000 E
+b11000000 J
+1D
+b1000 1
+1R
+1&
+#22000
+0D
+b0 1
+0R
+0&
+#23000
+b11 !
+b0 9
+b0 C
+b11zzzzzz10 "
+b11zzzzzz10 +
+b11 2
+b11 L
+b0 0
+b0 4
+b0 /
+b0 5
+b0 K
+b0 N
+b0 )
+b0 *
+b0 '
+b0 (
+#25000
+b1100 !
+b1100zzzzzz10 "
+b1100zzzzzz10 +
+b1100 2
+b1100 L
+b1 /
+b1 5
+b1 K
+b1 N
+b1000000 )
+b1000000 *
+b1 '
+#27000
+b110000 !
+b110000zzzzzz10 "
+b110000zzzzzz10 +
+b110000 2
+b110000 L
+b10 /
+b10 5
+b10 K
+b10 N
+b10000000 )
+b10000000 *
+b10 '
+#29000
+b11000000 !
+b11000000zzzzzz10 "
+b11000000zzzzzz10 +
+b11000000 2
+b11000000 L
+b11 /
+b11 5
+b11 K
+b11 N
+b11000000 )
+b11000000 *
+b11 '
+#31000
