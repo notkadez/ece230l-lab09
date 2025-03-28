@@ -2,10 +2,10 @@ module demux1x4(
     input in,
     input [1:0] sel,
     input enable,
-    output reg o1, o2, o3, o4
+    output reg o1, reg o2, reg o3, reg o4
 );
 
-always @(*) begin
+always @(in, sel) begin
     if(enable) begin 
         case(sel)
             2'b00: begin

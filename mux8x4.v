@@ -1,5 +1,5 @@
 module mux8x4(
-    input [7:0] i1, i2, i3, i4,
+    input [7:0] i1, [7:0] i2, [7:0] i3, [7:0] i4,
     input [1:0] sel,
     input enable,
     output reg [7:0] Y

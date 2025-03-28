@@ -3,10 +3,9 @@ module d_latch(
     output Q, NotQ
 );
 
-    // Will contain D-Latch behavior
     reg Q1, NotQ1;
 
-    always @(*) begin
+    always @(D, E) begin
         if (E) begin
             Q1 <= D;
             NotQ1 <= ~D;
